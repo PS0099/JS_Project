@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Text Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <button id="addTextBtn">Add Text</button>
+      <button id="increaseFontBtn">Increase Font</button>
+      <h3>
+        <span>Font Size: <span id="fontSize">0</span></span>
+      </h3>
+      <button id="decreaseFontBtn">Decrease Font</button>
+      <button id="boldBtn">Bold</button>
+      <button id="italicBtn">Italic</button>
+      <button id="undoBtn">Undo</button>
+      <button id="redoBtn">Redo</button>
+    </div>
+
+    <div id="canvas" class="canvas"></div>
+
+    <div id="textPopup" class="popup hidden">
+      <input type="text" id="textInput" placeholder="Enter text" />
+      <button id="addTextToCanvasBtn">Add Text</button>
+    </div>
+
+    <script src="s.js"></script>
+  </body>
+</html>

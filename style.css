@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.toolbar {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.canvas {
+  width: 80%;
+  height: 500px;
+  border: 2px dashed #ccc;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.text-item {
+  position: absolute;
+  cursor: grab;
+  user-select: none;
+  font-size: 16px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+#textInput {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#addTextToCanvasBtn {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addTextToCanvasBtn:hover {
+  background-color: #218838;
+}
